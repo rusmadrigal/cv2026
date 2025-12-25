@@ -35,7 +35,7 @@ export default function Resume({ data }: { data: ResumeType }) {
 
                 {data.basics.website ? (
                   <a href={data.basics.website} target="_blank" rel="noreferrer">
-                    Website
+                    GitHub
                   </a>
                 ) : null}
               </div>
