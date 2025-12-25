@@ -1,0 +1,395 @@
+@import "tailwindcss";
+
+/* ======================
+   Modern CV Theme (clean + readable)
+   - Better typography scale
+   - Softer neutrals
+   - Stronger section hierarchy
+   - Improved spacing + print
+====================== */
+
+/* ======================
+   Tokens
+====================== */
+:root {
+  --cv-bg: #f5f7fb;
+  --cv-paper: #ffffff;
+  --cv-ink: #0f172a;
+  --cv-muted: #475569;
+  --cv-subtle: #64748b;
+  --cv-border: #e2e8f0;
+  --cv-soft: #f8fafc;
+  --cv-accent: #0f172a;
+
+  --cv-radius: 14px;
+  --cv-shadow: 0 24px 70px rgba(2, 6, 23, 0.10);
+
+  --cv-text: 14px;
+  --cv-leading: 1.7;
+}
+
+/* ======================
+   Base / Reset
+====================== */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--cv-bg);
+  color: var(--cv-ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+::selection {
+  background: rgba(15, 23, 42, 0.12);
+}
+
+/* ======================
+   CV Layout
+====================== */
+.cv {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 42px 18px;
+}
+
+.cv__sheet {
+  background: var(--cv-paper);
+  border-radius: var(--cv-radius);
+  box-shadow: var(--cv-shadow);
+  overflow: hidden;
+  border: 1px solid rgba(226, 232, 240, 0.75);
+}
+
+/* ======================
+   Header
+====================== */
+.cv__top {
+  padding: 34px 44px;
+  border-bottom: 1px solid var(--cv-border);
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 60%, #fbfdff 100%);
+}
+
+.cv__topRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.cv__name {
+  font-size: 34px;
+  font-weight: 750;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.cv__headline {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--cv-muted);
+  max-width: 66ch;
+}
+
+.cv__meta {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  font-size: 13px;
+  color: var(--cv-muted);
+}
+
+.cv__meta a {
+  color: var(--cv-muted);
+}
+
+/* PDF Button */
+.cv__pdfBtn {
+  border: 1px solid rgba(226, 232, 240, 1);
+  background: var(--cv-accent);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, opacity 120ms ease;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
+}
+
+.cv__pdfBtn:hover {
+  opacity: 0.96;
+  text-decoration: none;
+}
+
+.cv__pdfBtn:active {
+  transform: translateY(1px);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.16);
+}
+
+.cv__pdfBtn:focus-visible {
+  outline: 3px solid rgba(15, 23, 42, 0.18);
+  outline-offset: 3px;
+}
+
+/* ======================
+   Body
+====================== */
+.cv__body {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 420px;
+}
+
+.cv__side {
+  padding: 28px 34px;
+  border-right: 1px solid var(--cv-border);
+  background: var(--cv-soft);
+}
+
+.cv__main {
+  padding: 28px 38px;
+}
+
+/* ======================
+   Sections
+====================== */
+.cv__section {
+  margin-bottom: 26px;
+}
+
+.cv__title {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--cv-subtle);
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.cv__title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: var(--cv-border);
+  margin-top: 10px;
+}
+
+/* ======================
+   Text blocks
+====================== */
+.cv__summary {
+  font-size: var(--cv-text);
+  line-height: var(--cv-leading);
+  color: var(--cv-ink);
+}
+
+.cv__summary p + p {
+  margin-top: 10px;
+}
+
+.cv__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cv__badge {
+  border: 1px solid rgba(226, 232, 240, 1);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  color: var(--cv-ink);
+  background: #ffffff;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.04);
+}
+
+/* Lists */
+.cv__list {
+  padding-left: 18px;
+  margin-top: 8px;
+  font-size: var(--cv-text);
+  line-height: 1.7;
+  color: var(--cv-ink);
+}
+
+.cv__list li {
+  margin: 6px 0;
+  color: var(--cv-ink);
+}
+
+.cv__list li::marker {
+  color: #94a3b8;
+}
+
+/* ======================
+   Experience / Education
+====================== */
+.cv__item {
+  margin-bottom: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px dashed rgba(226, 232, 240, 0.9);
+}
+
+.cv__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cv__itemTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: baseline;
+}
+
+.cv__role {
+  font-weight: 750;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  color: var(--cv-ink);
+}
+
+.cv__company {
+  margin-top: 3px;
+  font-size: 13px;
+  color: var(--cv-muted);
+}
+
+.cv__period {
+  font-size: 12px;
+  color: var(--cv-subtle);
+  white-space: nowrap;
+}
+
+/* ======================
+   Footer
+====================== */
+.cv__foot {
+  padding: 14px 32px;
+  border-top: 1px solid var(--cv-border);
+  font-size: 12px;
+  color: var(--cv-subtle);
+  background: #ffffff;
+}
+
+/* ======================
+   Responsive
+====================== */
+@media (max-width: 860px) {
+  .cv {
+    padding: 28px 14px;
+  }
+
+  .cv__body {
+    grid-template-columns: 1fr;
+  }
+
+  .cv__side {
+    border-right: none;
+    border-bottom: 1px solid var(--cv-border);
+  }
+
+  .cv__top {
+    padding: 26px 22px;
+  }
+
+  .cv__main {
+    padding: 22px;
+  }
+
+  .cv__side {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 520px) {
+  .cv__name {
+    font-size: 28px;
+  }
+
+  .cv__itemTop {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cv__period {
+    white-space: normal;
+  }
+
+  .cv__pdfBtn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .cv__title::after {
+    margin-top: 8px;
+  }
+}
+
+/* ======================
+   Print / PDF
+====================== */
+@media print {
+  :root {
+    --cv-bg: #ffffff;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .cv {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .cv__sheet {
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+  }
+
+  .cv__top {
+    background: #ffffff;
+  }
+
+  .cv__side {
+    background: #ffffff;
+  }
+
+  .cv__pdfBtn,
+  .cv__foot {
+    display: none !important;
+  }
+
+  .cv__item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
