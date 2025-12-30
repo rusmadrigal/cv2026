@@ -42,7 +42,7 @@ export default function Resume({ data }: { data: ResumeType }) {
             </div>
 
             <button type="button" onClick={() => handleDownloadPDF()} className="cv__pdfBtn">
-              Download PDF.
+              Download PDF
             </button>
           </div>
         </header>
