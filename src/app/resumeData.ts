@@ -44,11 +44,12 @@ export const resumeData: Resume = {
     website: "https://github.com/rusmadrigal",
     youtube: "https://www.youtube.com/watch",
     summary: [
-      "Senior SEO professional with over ten years of experience, including a strong focus on Technical SEO.",
-      "Solid background in JavaScript, HTML, CSS, and Next.js, with hands-on experience in technical audits, Core Web Vitals optimization, log file analysis, and structured data implementation.",
-      "Strong expertise in web analytics and measurement, working with GA4, Google Tag Manager, Adobe Analytics, and Looker Studio to translate data into actionable insights.",
-      "Known for a structured, detail-oriented approach and close collaboration with engineering and product teams to drive sustainable organic growth.",
-    ],
+      "Senior SEO professional with 10+ years of experience, specializing in Technical SEO for large-scale and international websites.",
+      "Strong technical background across JavaScript-based environments, with hands-on expertise in audits, Core Web Vitals, log analysis, and structured data.",
+      "Data-driven strategist leveraging analytics and AI-assisted workflows to accelerate analysis, prioritize opportunities, and support scalable SEO decisions.",
+      "Collaborative leader, working closely with engineering and product teams to deliver sustainable organic growth."
+    ]
+    ,
     skills: [
       // SEO técnico
       "Technical SEO",
