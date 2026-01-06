@@ -87,9 +87,9 @@ export const resumeData: Resume = {
   experience: [
     {
       company: "Publicis Groupe",
-      role: "SEO Lead (PGD LATAM HUB)",
+      role: "SEO Associate Director (PGD LATAM HUB)",
       location: "Costa Rica",
-      period: "February 2023 – Present",
+      period: "February 2023 – January 2026",
       highlights: [
         "As a Media Delivery Associate Director, I lead the LATAM SEO Delivery team and oversee technical SEO initiatives across large-scale, multilingual websites.",
         "Focus on site architecture, crawlability and indexation, Core Web Vitals optimization, structured data, and rendering behavior across JS/PHP-based environments.",
