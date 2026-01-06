@@ -2,10 +2,6 @@
 
 /* ======================
    Modern CV Theme (clean + readable)
-   - Better typography scale
-   - Softer neutrals
-   - Stronger section hierarchy
-   - Improved spacing + print
 ====================== */
 
 /* ======================
@@ -22,7 +18,7 @@
   --cv-accent: #0f172a;
 
   --cv-radius: 14px;
-  --cv-shadow: 0 24px 70px rgba(2, 6, 23, 0.10);
+  --cv-shadow: 0 24px 70px rgba(2, 6, 23, 0.1);
 
   --cv-text: 14px;
   --cv-leading: 1.7;
@@ -310,6 +306,7 @@ a:hover {
   .cv__side {
     border-right: none;
     border-bottom: 1px solid var(--cv-border);
+    padding: 22px;
   }
 
   .cv__top {
@@ -317,10 +314,6 @@ a:hover {
   }
 
   .cv__main {
-    padding: 22px;
-  }
-
-  .cv__side {
     padding: 22px;
   }
 }
@@ -352,16 +345,20 @@ a:hover {
 /* ======================
    Print / PDF
 ====================== */
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
 @media print {
-  :root {
-    --cv-bg: #ffffff;
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   body {
     background: #ffffff !important;
     color: #000000;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
   }
 
   .cv {
@@ -375,12 +372,9 @@ a:hover {
     border: none;
   }
 
-  .cv__top {
-    background: #ffffff;
-  }
-
+  .cv__top,
   .cv__side {
-    background: #ffffff;
+    background: #ffffff !important;
   }
 
   .cv__pdfBtn,
@@ -388,6 +382,8 @@ a:hover {
     display: none !important;
   }
 
+  .cv__sheet,
+  .cv__section,
   .cv__item {
     break-inside: avoid;
     page-break-inside: avoid;

@@ -8,9 +8,17 @@ export default function Resume({ data }: { data: ResumeType }) {
   const contentRef = useRef<HTMLDivElement>(null);
 
   const handleDownloadPDF = useReactToPrint({
-    contentRef, // ✅ importante (evita "There is nothing to print")
-    documentTitle: `${data.basics.name.replace(/\s+/g, "_")}_CV`,
-  });
+  contentRef,
+  documentTitle: `${data.basics.name.replace(/\s+/g, "_")}_CV`,
+  pageStyle: `@page{size:A4;margin:12mm;}
+    @media print{
+      .cv__pdfBtn{display:none!important;}
+      .cv__sheet,.cv__section,.cv__item{break-inside:avoid;page-break-inside:avoid;}
+      .cv__side{background:#fff!important;}
+      *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    }`,
+});
+
 
   return (
     <main className="cv">
