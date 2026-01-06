@@ -36,7 +36,7 @@ export type Resume = {
 export const resumeData: Resume = {
   basics: {
     name: "Rusben Madrigal",
-    headline: "Senior Technical SEO & Web Performance",
+    headline: "Senior Technical SEO | AI-Driven SEO, Web Performance & Growth",
     location: "San Jose, Costa Rica",
     email: "rusbenmadrigal@gmail.com",
     phone: "87773420",
@@ -50,50 +50,51 @@ export const resumeData: Resume = {
       "Known for a structured, detail-oriented approach and close collaboration with engineering and product teams to drive sustainable organic growth.",
     ],
     skills: [
-  // SEO técnico
-  "Technical SEO",
-  "JavaScript SEO",
-  "HTML",
-  "CSS",
-  "Next.js",
-  "Rendering & Indexation",
-  "Crawlability & Site Architecture",
-  "Core Web Vitals",
-  "Structured Data (JSON-LD)",
-  "Log File Analysis",
+      // SEO técnico
+      "Technical SEO",
+      "JavaScript SEO",
+      "HTML",
+      "CSS",
+      "Next.js",
+      "Rendering & Indexation",
+      "Crawlability & Site Architecture",
+      "Core Web Vitals",
+      "Structured Data (JSON-LD)",
+      "Log File Analysis",
 
-  // Herramientas SEO
-  "Google Search Console",
-  "Screaming Frog",
-  "SEMrush",
-  "Ahrefs",
-  "Sitebulb",
+      // Herramientas SEO
+      "Google Search Console",
+      "Screaming Frog",
+      "SEMrush",
+      "Ahrefs",
+      "Sitebulb",
 
-  // Analítica & data
-  "Google Analytics 4 (GA4)",
-  "Google Tag Manager (GTM)",
-  "Adobe Analytics",
-  "Looker Studio",
-  "SQL",
+      // Analítica & data
+      "Google Analytics 4 (GA4)",
+      "Google Tag Manager (GTM)",
+      "Adobe Analytics",
+      "Looker Studio",
+      "SQL",
 
-  // Performance
-  "Web Performance Optimization",
-  "Lighthouse",
-  "PageSpeed Insights"
-],
+      // Performance
+      "Web Performance Optimization",
+      "Lighthouse",
+      "PageSpeed Insights"
+    ],
     languages: ["English (Full Professional)", "Español (Native or Bilingual)"],
   },
 
   experience: [
     {
       company: "Publicis Groupe",
-      role: "SEO Associate Director (PGD LATAM HUB)",
+      role: "SEO Associate Director",
       location: "Costa Rica",
       period: "February 2023 – January 2026",
       highlights: [
         "As a Media Delivery Associate Director, I lead the LATAM SEO Delivery team and oversee technical SEO initiatives across large-scale, multilingual websites.",
-        "Focus on site architecture, crawlability and indexation, Core Web Vitals optimization, structured data, and rendering behavior across JS/PHP-based environments.",
-        "Collaborate with engineering, analytics, and content teams to diagnose complex issues, implement scalable solutions, and drive measurable organic growth for global brands.",
+        "Drive technical SEO strategy with a focus on site architecture, crawlability and indexation, Core Web Vitals optimization, structured data, and rendering behavior across JS- and PHP-based environments.",
+        "Lead the adoption of AI-assisted and automated SEO workflows to support technical audits, issue prioritization, and scalable recommendations across markets.",
+        "Collaborate closely with engineering, analytics, and content teams to diagnose complex issues, implement efficient solutions, and deliver measurable organic growth for global brands."
       ],
     },
     {
