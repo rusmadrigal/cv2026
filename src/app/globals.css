@@ -343,7 +343,7 @@ a:hover {
 }
 
 /* ======================
-   Print / PDF
+   Print / PDF (single @media print block — do not duplicate; merge conflicts break the build)
 ====================== */
 @page {
   size: A4;
