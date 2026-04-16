@@ -61,7 +61,7 @@ export default function Resume({ data }: { data: ResumeType }) {
         {/* HEADER */}
         <header className="cv__top">
           <div className="cv__topRow">
-            <div>
+            <div className="cv__topIntro">
               <h1 className="cv__name">{data.basics.name}</h1>
               <p className="cv__headline">{data.basics.headline}</p>
 
@@ -111,9 +111,11 @@ export default function Resume({ data }: { data: ResumeType }) {
               </div>
             </div>
 
-            <button type="button" onClick={() => handleDownloadPDF()} className="cv__pdfBtn">
-              Download PDF
-            </button>
+            <div className="cv__topPdf">
+              <button type="button" onClick={() => handleDownloadPDF()} className="cv__pdfBtn">
+                Download PDF
+              </button>
+            </div>
           </div>
         </header>
 

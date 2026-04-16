@@ -85,11 +85,19 @@ a:hover {
 }
 
 .cv__topRow {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  column-gap: 20px;
+  row-gap: 12px;
+}
+
+.cv__topIntro {
+  min-width: 0;
+}
+
+.cv__topPdf {
+  justify-self: end;
 }
 
 .cv__name {
@@ -342,6 +350,15 @@ a:hover {
     font-size: 28px;
   }
 
+  .cv__topRow {
+    grid-template-columns: 1fr;
+  }
+
+  .cv__topPdf {
+    order: -1;
+    justify-self: end;
+  }
+
   .cv__itemTop {
     flex-direction: column;
     align-items: flex-start;
@@ -352,8 +369,8 @@ a:hover {
   }
 
   .cv__pdfBtn {
-    width: 100%;
-    margin-top: 10px;
+    width: auto;
+    max-width: 100%;
   }
 
   .cv__title::after {
