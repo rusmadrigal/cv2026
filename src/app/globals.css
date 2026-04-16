@@ -120,6 +120,25 @@ a:hover {
   color: var(--cv-muted);
 }
 
+.cv__meta a.cv__metaSocial {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+/* Inline SVGs need explicit box; without it some browsers use huge default intrinsic size. */
+.cv__meta a.cv__metaSocial svg,
+.cv__metaIcon {
+  width: 15px;
+  height: 15px;
+  max-width: 15px;
+  max-height: 15px;
+  flex-shrink: 0;
+  opacity: 0.92;
+}
+
 /* PDF Button */
 .cv__pdfBtn {
   border: 1px solid rgba(226, 232, 240, 1);
@@ -241,7 +260,7 @@ a:hover {
 }
 
 /* ======================
-   Experience / Education
+   Experience / Education Summary
 ====================== */
 .cv__item {
   margin-bottom: 20px;
@@ -372,7 +391,7 @@ a:hover {
     border: none;
   }
 
-  /* Una columna en PDF: orden lineal (Summary → Skills → Languages → Experience → Education) para parsers ATS */
+  /* Una columna en PDF: orden lineal (Summary → Skills → Languages → Experience → Education Summary) para parsers ATS */
   .cv__body {
     grid-template-columns: 1fr;
   }

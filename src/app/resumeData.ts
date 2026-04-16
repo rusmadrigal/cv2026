@@ -91,7 +91,7 @@ export const resumeData: Resume = {
   experience: [
     {
       company: "Taco Digital",
-      role: "Head of SEO (Temporary Contract)",
+      role: "Head of SEO (Contractor)",
       location: "United States",
       period: "January 2026 – March 2026 (3 months)",
       highlights: [
@@ -129,7 +129,10 @@ export const resumeData: Resume = {
       role: "Senior Technical SEO",
       location: "Santa Ana, San Jose, Costa Rica",
       period: "May 2021 – May 2022",
-      highlights: ["In charge of Technical SEO."],
+      highlights: [
+        "Led Technical SEO strategy and execution, optimizing site performance, crawlability, and indexation.",
+        "Partnered with development and content teams to implement scalable technical solutions, driving improvements in organic visibility and search performance.",
+      ],
     },
     {
       company: "The Strategic Group",
@@ -147,7 +150,7 @@ export const resumeData: Resume = {
     },
     {
       company: "Tripadvisor",
-      role: "Senior Technical SEO",
+      role: "Senior Technical SEO (Contractor)",
       location: "Remote",
       period: "February 2018 – April 2020",
       highlights: [
@@ -196,14 +199,14 @@ export const resumeData: Resume = {
     },
     */
     {
-      institution: "McKinsey & Company",
+      institution: "McKinsey & Company (McKinsey Accelerate)",
       program:
         "Professional Development Program (Leadership, Problem Solving, and Business Skills)",
-      period: "October 2025 – April 2026",
+      period: "21 April 2026 – Tuesday, 30 June 2026",
     },
     {
-      institution: "Universidad de La Sabana",
-      program: "Metodologías Ágiles e Innovación en la Organización",
+      institution: "Universidad de La Sabana (Colombia)",
+      program: "Agile Methodologies and Organizational Innovation",
       field: "Marketing",
       period: "October 2023 – February 2024",
     },
@@ -212,6 +215,17 @@ export const resumeData: Resume = {
       program: "Management Development Program 2024",
       field: "Marketing",
       period: "April 2024 – May 2024",
+    },
+    {
+      institution: "Colegio Universitario Boston",
+      program: "Frontend Engineer",
+      field: "Web Design – HTML, CSS, JavaScript, jQuery & PHP",
+      period: "7 September 2008 – 19 March 2010",
+    },
+    {
+      institution: "Instituto Universitario Jimenez",
+      program: "Computer Operator Training (Databases & Web Development)",
+      period: "16 May 2005 – 2 May 2006",
     },
     /* Oculto en front — Universidad Latina de Costa Rica
     {
