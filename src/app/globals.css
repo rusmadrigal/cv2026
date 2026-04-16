@@ -43,6 +43,7 @@ body {
     Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 a {
@@ -94,6 +95,7 @@ a:hover {
 
 .cv__topIntro {
   min-width: 0;
+  max-width: 100%;
 }
 
 .cv__topPdf {
@@ -119,13 +121,18 @@ a:hover {
   margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 10px 14px;
   font-size: 13px;
   color: var(--cv-muted);
+  min-width: 0;
+  max-width: 100%;
+  overflow: visible;
 }
 
 .cv__meta a {
   color: var(--cv-muted);
+  min-width: 0;
 }
 
 .cv__meta a.cv__metaSocial {
@@ -395,6 +402,7 @@ a:hover {
   body {
     background: #ffffff !important;
     color: #000000;
+    overflow-x: visible;
   }
 
   .cv {
