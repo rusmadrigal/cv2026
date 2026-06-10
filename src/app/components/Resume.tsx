@@ -105,7 +105,7 @@ export default function Resume({ data }: { data: ResumeType }) {
 
                 {data.basics.personalWebsite ? (
                   <a href={data.basics.personalWebsite} target="_blank" rel="noreferrer">
-                    www.rusmadrigal.com
+                    rusbenmadrigal.vercel.app
                   </a>
                 ) : null}
               </div>

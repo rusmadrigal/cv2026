@@ -43,7 +43,7 @@ export const resumeData: Resume = {
     email: "rusbenmadrigal@gmail.com",
     phone: "87773420",
     linkedin: "https://www.linkedin.com/in/rusmadrigal",
-    personalWebsite: "https://www.rusmadrigal.com",
+    personalWebsite: "https://rusbenmadrigal.vercel.app/",
     website: "https://github.com/rusmadrigal",
     youtube: "https://www.youtube.com/watch",
     summary: [
@@ -89,6 +89,17 @@ export const resumeData: Resume = {
   },
 
   experience: [
+    {
+      company: "Granicus",
+      role: "Senior SEO Analyst",
+      location: "San Jose, Costa Rica (Remote)",
+      period: "May 2026 – Present",
+      highlights: [
+        "Lead organic growth initiatives for destination and tourism-focused digital experiences across the U.S. market.",
+        "Drive technical SEO, content strategy, AI search visibility, performance analysis, CRO collaboration, and enterprise-level optimization across large-scale web ecosystems.",
+        "Work cross-functionally with content, UX, analytics, and development teams to improve discoverability, user acquisition, and organic performance through data-driven strategies and scalable SEO frameworks.",
+      ],
+    },
     {
       company: "Taco Digital",
       role: "Head of SEO (Contractor)",
